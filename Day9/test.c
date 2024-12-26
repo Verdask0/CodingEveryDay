@@ -6,4 +6,5 @@ int main(void){
   char* rint = (char*)malloc(1);
   *rint = 198;
     printf("int = %c\n",*rint);
+  printf( "Delete file (are you really sure??):");
 }
