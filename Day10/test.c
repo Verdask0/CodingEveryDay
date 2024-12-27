@@ -1,12 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main(void){
-  int* dynamicVar = (int*)malloc(sizeof(int));
-  *dynamicVar = 101;
-  printf("int :%d\nand the address is %p\n",*dynamicVar,&dynamicVar);
+int main(void) {
+  char test[] = "";
+  scanf("%s", &test);
+  while (1) {
+    char x = 0;
+    for (int i = 0; i < 100; i++) {
+      if (x == test[i]){
+        break;
 
-  for(int i =0; i< 10; i++){
-    printf("the pointer = %p\n",&dynamicVar+i);
+        x++;
+      }
+
+    printf("%c",x);
+    }
   }
 }
