@@ -25,7 +25,6 @@ class ClockApp(App):
         clock = datetime.now().time()
         self.query_one(Digits).update(f"{clock:%T}")
 
-
 if __name__ == "__main__":
     app = ClockApp()
     app.run()
